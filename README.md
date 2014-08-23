@@ -1,7 +1,7 @@
-h1. Coursera Course 3 - Data Cleaning
+# Coursera Course 3 - Data Cleaning
 (Documentation of Peer Assignment Script)
 
-h2. Overview
+## Overview
 
 Script: run_analysis.R
 Environment:
@@ -12,30 +12,30 @@ Operation:
 * Output is a file "task5.txt". It contains the tidy data set requested in step 5 of the peer assignment
 
 
-h2. Detailed documentation
+## Detailed documentation
 
-h3. Preparation Step
+### Preparation Step
 
 Script reads the following data:
 
-* Training Data
-** Training data set: x_train.txt
-** Training set activity data: y_train.txt
-** Training set subject id's: subject_train.txt
-* Test Data
-** Test data set: x_test.txt
-** Test set activity data: y_test.txt
-** Test set subject id's: subject_test.txt
-* Feature List: features.txt
-* Activity Lavels: activity_labels.txt
+- Training Data
+* Training data set: x_train.txt
+* Training set activity data: y_train.txt
+* Training set subject id's: subject_train.txt
+- Test Data
+* Test data set: x_test.txt
+* Test set activity data: y_test.txt
+* Test set subject id's: subject_test.txt
+- Feature List: features.txt
+- Activity Lavels: activity_labels.txt
 
 For each test and training data a data frame is initialized. That data frame contains the feature data as column names and has added the subject id data
 
-h3. Step 1
+### Step 1
 
 The two data frames for test and for training data are merged into a single data frame "df_merge"
 
-h3. Step 2
+### Step 2
 
 Each feature name is tested for whether it contains "mean" or "std" (for standard deviation).
 Only features with either "mean" or "std" in their name are selected.
@@ -46,19 +46,19 @@ The selection of "mean" and "std" follows rules:
 
 Result: dataframe df2
 
-h3. Step 3
+### Step 3
 
 A function converts activity id's to activity labels.
 The data frame df2 is modified to contain an extra column "activitylabel", which interprets the activity id's according to the activity label map read from file.
 
-h3. Step 4
+### Step 4
 
 The feature names (column names) in df3 are "cleaned" to drop punctuation characters. Although using underscores in column names is less than ideal,
 they are put into column names here, to retain some readability that the punctuation in the feature names was responsible for.
 
 Result is a data frame df4, which holds the cleaned column names
 
-h3. Step 5
+### Step 5
 
 The dataframe df4 is "melted" (or "unpivoted"), so that for each subjectid and activitylabel, each other variable/value pair occupies one row.
 Before that, the column of duplicate meaning, activityid is dropped. It isn't supposed to be in a tidy dataset anyway.
