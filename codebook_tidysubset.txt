@@ -1,0 +1,180 @@
+CODEBOOK of "task5.txt"
+
+Contains a dataframe (table) in tab-separated format.
+The table contains 1 line of column headers (feature names) but no row headers.
+
+The columns consist of 81 columns with features, there are 180 rows.
+
+
+Feature Overview
+=================
+
+List of features in tab-separated format.
+
+There are two identifier columns and 79 columns of features derived from a different data set.
+(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+The "derived features" were derived from features in the original data set,
+by grouping observations by subjectid, activitylabel, and taking the mean
+across all observations with the same subjectid and activitylabel.
+
+Feature	Format	Derived from	Type
+-------------------------------------------------------------------------------------------------------------------------------
+subjectid	int	N/A	Identifier
+activitylabel	string	N/A	Identifier
+tBodyAcc_MEAN_X	float	tBodyAcc-mean()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAcc_MEAN_Y	float	tBodyAcc-mean()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAcc_MEAN_Z	float	tBodyAcc-mean()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAcc_SD_X	float	tBodyAcc-std()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAcc_SD_Y	float	tBodyAcc-std()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAcc_SD_Z	float	tBodyAcc-std()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tGravityAcc_MEAN_X	float	tGravityAcc-mean()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tGravityAcc_MEAN_Y	float	tGravityAcc-mean()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tGravityAcc_MEAN_Z	float	tGravityAcc-mean()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tGravityAcc_SD_X	float	tGravityAcc-std()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tGravityAcc_SD_Y	float	tGravityAcc-std()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tGravityAcc_SD_Z	float	tGravityAcc-std()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccJerk_MEAN_X	float	tBodyAccJerk-mean()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccJerk_MEAN_Y	float	tBodyAccJerk-mean()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccJerk_MEAN_Z	float	tBodyAccJerk-mean()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccJerk_SD_X	float	tBodyAccJerk-std()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccJerk_SD_Y	float	tBodyAccJerk-std()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccJerk_SD_Z	float	tBodyAccJerk-std()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyro_MEAN_X	float	tBodyGyro-mean()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyro_MEAN_Y	float	tBodyGyro-mean()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyro_MEAN_Z	float	tBodyGyro-mean()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyro_SD_X	float	tBodyGyro-std()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyro_SD_Y	float	tBodyGyro-std()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyro_SD_Z	float	tBodyGyro-std()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroJerk_MEAN_X	float	tBodyGyroJerk-mean()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroJerk_MEAN_Y	float	tBodyGyroJerk-mean()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroJerk_MEAN_Z	float	tBodyGyroJerk-mean()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroJerk_SD_X	float	tBodyGyroJerk-std()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroJerk_SD_Y	float	tBodyGyroJerk-std()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroJerk_SD_Z	float	tBodyGyroJerk-std()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccMag_MEAN	float	tBodyAccMag-mean()	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccMag_SD	float	tBodyAccMag-std()	Derived by taking Mean, grouped by subjectid, activitylabel
+tGravityAccMag_MEAN	float	tGravityAccMag-mean()	Derived by taking Mean, grouped by subjectid, activitylabel
+tGravityAccMag_SD	float	tGravityAccMag-std()	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccJerkMag_MEAN	float	tBodyAccJerkMag-mean()	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyAccJerkMag_SD	float	tBodyAccJerkMag-std()	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroMag_MEAN	float	tBodyGyroMag-mean()	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroMag_SD	float	tBodyGyroMag-std()	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroJerkMag_MEAN	float	tBodyGyroJerkMag-mean()	Derived by taking Mean, grouped by subjectid, activitylabel
+tBodyGyroJerkMag_SD	float	tBodyGyroJerkMag-std()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAcc_MEAN_X	float	fBodyAcc-mean()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAcc_MEAN_Y	float	fBodyAcc-mean()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAcc_MEAN_Z	float	fBodyAcc-mean()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAcc_SD_X	float	fBodyAcc-std()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAcc_SD_Y	float	fBodyAcc-std()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAcc_SD_Z	float	fBodyAcc-std()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAcc_MEANFreq_X	float	fBodyAcc-meanFreq()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAcc_MEANFreq_Y	float	fBodyAcc-meanFreq()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAcc_MEANFreq_Z	float	fBodyAcc-meanFreq()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccJerk_MEAN_X	float	fBodyAccJerk-mean()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccJerk_MEAN_Y	float	fBodyAccJerk-mean()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccJerk_MEAN_Z	float	fBodyAccJerk-mean()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccJerk_SD_X	float	fBodyAccJerk-std()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccJerk_SD_Y	float	fBodyAccJerk-std()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccJerk_SD_Z	float	fBodyAccJerk-std()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccJerk_MEANFreq_X	float	fBodyAccJerk-mean()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccJerk_MEANFreq_Y	float	fBodyAccJerk-mean()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccJerk_MEANFreq_Z	float	fBodyAccJerk-mean()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyGyro_MEAN_X	float	fBodyGyro-mean()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyGyro_MEAN_Y	float	fBodyGyro-mean()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyGyro_MEAN_Z	float	fBodyGyro-mean()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyGyro_SD_X	float	fBodyGyro-std()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyGyro_SD_Y	float	fBodyGyro-std()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyGyro_SD_Z	float	fBodyGyro-std()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyGyro_MEANFreq_X	float	fBodyGyro-meanFreq()-X	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyGyro_MEANFreq_Y	float	fBodyGyro-meanFreq()-Y	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyGyro_MEANFreq_Z	float	fBodyGyro-meanFreq()-Z	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccMag_MEAN	float	fBodyAccMag-mean()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccMag_SD	float	fBodyAccMag-std()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyAccMag_MEANFreq	float	fBodyAccMag-meanFreq()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyBodyAccJerkMag_MEAN	float	fBodyBodyAccJerkMag-mean()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyBodyAccJerkMag_SD	float	fBodyBodyAccJerkMag-std()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyBodyAccJerkMag_MEANFreq	float	fBodyBodyAccJerkMag-meanFreq()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyBodyGyroMag_MEAN	float	fBodyBodyGyroMag-mean()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyBodyGyroMag_SD	float	fBodyBodyGyroMag-std()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyBodyGyroMag_MEANFreq	float	fBodyBodyGyroMag-meanFreq()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyBodyGyroJerkMag_MEAN	float	fBodyBodyGyroJerkMag-mean()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyBodyGyroJerkMag_SD	float	fBodyBodyGyroJerkMag-std()	Derived by taking Mean, grouped by subjectid, activitylabel
+fBodyBodyGyroJerkMag_MEANFreq	float	fBodyBodyGyroJerkMag-meanFreq()	Derived by taking Mean, grouped by subjectid, activitylabel
+
+
+
+Feature Description
+====================
+
+The features of data set task5.txt contains two types of variables:
+
+* identifying variables: subjectid, activitylabel
+* derivations of observed variables
+
+Description of Identifier Variables and Original Data Set
+=========================================================
+
+Subjectid: An integer (1 - 30) associated with an individual person, whose measurements were taken
+
+activitylabel: A string of a selection of 6 strings that describe the activity the individual was undertaking while the observations were measured. Examples: WALKING, SITTING, LAYING, etc.
+
+In the original data set multiple observations were recorded per person and per activitylabel.
+
+In this data set the observed variables are all derived from the observed variables recorded in the original data set in the following way:
+
+For each combination of identifier variables, i.e. for every combination of subjectid and activitylevel, all observations recorded in the original data set have been averaged to yield one observation in the derived data set.
+
+In the original data set there are a total of 10k observations.
+
+In the derived data set (this data set), there are 1 observation per combination of subjectid and activitylabel, so a total of 180 derived observations.
+
+For example, in the original dataset there are 10k observations for feature "tBodyAcc-Mean-X". In this (derived) data set there are 180 values for tBodyAcc_MEAN_X, one for each combination of subjectid and activitylevel. The value of tBodyAcc_MEAN_X is the average of all tBodyAcc-Mean-X-observations for the same subjectid and activitylevel.
+
+
+Overview over Original Observed Variables
+==========================================
+
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+
